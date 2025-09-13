@@ -8,7 +8,7 @@ resource "helm_release" "gateway" {
   chart            = "gateway"
   namespace        = "istio-ingress"
   create_namespace = true
-  version          = "1.17.1"
+  version          = "1.27.1"
 
   depends_on = [
     helm_release.istio_base,
